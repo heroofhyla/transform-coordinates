@@ -38,7 +38,7 @@ new_coords = old_coords.map do |coord|
   next ({x: (x - x_min) * scale_factor, y: (y - y_min) * scale_factor})
 end
 
-puts "X values:\n\n"
+puts "X values:"
 puts new_coords.map{|coord| coord[:x]}.join(" ")
-puts "Y values:"
+puts "\nY values:"
 puts new_coords.map{|coord| coord[:y]}.join(" ")
